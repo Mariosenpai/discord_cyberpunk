@@ -1,0 +1,9 @@
+.cache
+.pytest_cache
+.pythonlibs
+.upm
+replit.nix
+replit_zip_error_log.txt
+.replit
+venv
+token.txt

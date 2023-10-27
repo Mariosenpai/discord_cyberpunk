@@ -1,0 +1,19 @@
+{
+  "sudo": {
+    "criar": "Criar uma ficha. Parametros: nome:str='seu_nome', armadura:str'25,25,25,25,25,25', vida:int=1, ref:int=2, int:int=2, tec:int=2, cool:int=2, atr:int=2, sort:int=2, mov:int=2, body:int=2, empatia:int=2",
+    "ficha": "Mostrar Sua ficha completa",
+    "initiative": "O mestre pode roda a iniciativa de todos os usuario cadastrado na mesa" ,
+    "ficha-update": "Atualizar um parametro da sua ficha Obs(os atributos estão listados acima). Parametros: nome_atributo, novo_valor",
+    "ficha-arma-add": "Adiciona uma arma. Parametros: nome, dado_dano",
+    "ficha-arma":"Mostra todas as suas armas cadastradas, e faz com que voce selecione uma arma ativa.",
+    "difficulty": "Mostra a dificuldade cadastrada",
+    "define-difficulty": "Defini a dificuldade da proxima ação ate ela ser alterada. A dificuldade é definida pelo MESTRE. Parametros: dificuldade_valor:int=0",
+    "define-url-attack": "Adiciona um gif para a ação de ataca(attack) for efetuada com sucesso, adiciona mais de um gif fazer com que ele seja selecionada aleatoriamente.",
+    "delete-url-attack": "Deleta uma gif cadastrada pelo usuario. Se não ouver nenhum gif cadastrado pelo usario ele iria usar os gif padrão",
+    "define-proficiency-attack":"Defini um valor para a proficiencia de ataque. Server para não ter que ficar colocando em todo jogada o modificador de proficiencia. Parametros: proficiencia_valor",
+    "attack": "Executa o ataque. Leva em conta seu REF e sua proficiencia em ataque. A proficiencia em ataque pode ser definida usando a função 'define-proficiency-attack', caso ela não seja difinida ou voce queria ignora-la, definia o valor da proficiencia logo após a quantidade_tiros (Voce pode colocar -1 na proficiencia_valor para que se use a proficiencia em ataque ja cadastrada). O parametro red vem por default TRUE, ele definir que a regra de ataque seja baseada a do livro cyberpunk RED, caso não queria usar-la definia o parametro para FALSE. Se o dado de dano não for especificado sera usar o dado da arma ativa de sua ficha. Parametro. Parametros: quantidade_tiros:int=1 , proficiencia_valor:int=-1,dado_dano:str='',red:bool=True ,info_mestre:bool=False):",
+    "damage": "Recebe um lista com as informações dos locais do dano (EXEMPLO: 25,25,25,25,25,25), sendo eles respectivamente cabeça,torso,braço direito,braço esquerdo,perna direita,perna esquerda. A função de attack ao final dele disponibiliza o template de dano para ser usado nessa função. Caso a armadura não seja especificada nessa função serada usada a armadura que o usuario tem cadastrada em sua ficha. Parametros: lista_dano, armadura",
+    "action": "É uma ação para fazer algo, faz um teste jogando um 1d10 para verificar se voce conseguiu ou não passa no desafio. Usa a dificuldade cadastrada pelo MESTRE. O parametro 'atributo' pode ser definido como uma string que irar receber o nome do atributo na sua ficha ou serar um int quer irar receber o valor do atributo. Parametros: atributo, proficiencia"
+  }
+  
+}

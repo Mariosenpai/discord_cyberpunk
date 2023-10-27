@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "repl-nix-sistemacyberpunkdiscord"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "repl_nix_sistemacyberpunkdiscord"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+orjson = "^3.9.9"
+pynacl = "^1.5.0"
+requests = "^2.31.0"
+tql = "^2020.11.11.15.32.5"
+typing-extensions = "^4.8.0"
+ui = "^0.1.4"
+yikai-tools = "^1.0.6"
+aiohttp = "^3.8.6"
+async-timeout = "^4.0.3"
+discord = "^2.3.2"
+yarl = "^1.9.2"
+nextcord = "^2.6.0"
+service = "^0.6.0"
+services = "^0.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
